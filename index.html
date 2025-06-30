@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Algorithm</title>
+    <link rel="stylesheet" href="cube.css">
+</head>
+<body>
+    <h1>Rubik's Cube Solver</h1>
+    <div id="cube-container"></div>
+    <div class="controls">
+    <button onclick="cube.scramble(10)">Scramble</button>
+    <button onclick="cube.solve()">Solve</button>
+    <!-- <button onclick="cube.reverseManualMoves()">Undo MAnualmoves</button> -->
+    </div>
+    <div class="manual-controls">
+        <h3>Manual Rotate</h3>
+        <button onclick="cube.rotateFace('F','CW',true)">Front CW</button>
+        <button onclick="cube.rotateFace('F','CCW',true)">Front CCW</button>
+        <button onclick="cube.rotateFace('B','CW',true)">Back CW</button>
+        <button onclick="cube.rotateFace('B','CCW',true)">Back CCW</button>
+        <button onclick="cube.rotateFace('U','CW',true)">Up CW</button>
+        <button onclick="cube.rotateFace('U','CCW',true)">Up CCW</button>
+        <button onclick="cube.rotateFace('D','CW',true)">Down CW</button>
+        <button onclick="cube.rotateFace('D','CCW',true)">Down CCW</button>
+        <button onclick="cube.rotateFace('L','CW',true)">Left CW</button>
+        <button onclick="cube.rotateFace('L','CCW',true)">Left CCW</button>
+        <button onclick="cube.rotateFace('R','CW',true)">Right CW</button>
+        <button onclick="cube.rotateFace('R','CCW',true)">Right CCW</button>
+    </div>
+    <script src="cube.js"></script>
+</body>
+</html>
